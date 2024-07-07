@@ -1,38 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: scroll; /* Hides both vertical and horizontal scrollbars */
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  height: 80px;
+  width: 100%;
+  background-color: #b6cbf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.nav-right li{
+  display: flex;
+  padding-left: 10vh;
+}
+.nav-right li :hover{
+  color: blue; 
+}
+.nav-right li a {
+  color: #ffff;
+  text-decoration: none;
+}
+.nav-ul li {
+  display: inline;
+  padding-left: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-ul li :hover {
+  color: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-ul li a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.footer {
+  height: 100px;
+  background-color: black;
+  color: #ffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputbox {
+  display: block;
+  margin-top: 15px;
+  padding: 7px;
+  width: 300px;
+  border: 1px solid #b6cbf8;
+}
+
+.inputbtn {
+  width: 85px;
+  margin-top: 10px;
+  border: 1px solid #000000;
+  padding: 7px;
+  background-color: #b6cbf8;
+}
+.add-product-btn{
+  width: 90px;
+  margin-top: 10px;
+  border: 1px solid #000000;
+  padding: 7px;
+  background-color: #b6cbf8;
+}
+.Update-product-btn{
+  width: 110px;
+  margin-top: 10px;
+  border: 1px solid #000000;
+  padding: 7px;
+  background-color: #b6cbf8;
+}
+.add-product{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.invalid-input{
+  margin-left: -198px;
+  margin-top: 2px;
+  color: red;
+}
+.product-list{
+  height: 200vh;
+}
+.product-list h3{
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+.product-list ul li {
+  display: inline-block;
+  border: 2px solid skyblue;
+  padding: 1vh;
+  width: 24vh;
+  margin-top: 0px;
+}
+.delete-btn{
+  border: 1px solid black;
+  background-color: #ff0000ba;
+}
+.update-btn{
+  margin-left: 1vh;
+  border: 1px solid black;
+  background-color: #b6cbf8;
+}
+.SearchBox {
+  border: 2px solid skyblue;
+  border-radius: 1vh;
+  width: 35vh;
+  margin-bottom: 4vh;
+  height: 6vh;
+  padding: 1.18vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
